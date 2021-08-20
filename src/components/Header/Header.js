@@ -1,16 +1,20 @@
 import React from 'react';
+import './Header.css';
 import { Collapse, Navbar, NavbarBrand, Nav, NavItem, NavLink} from 'reactstrap';
+import Logo from '../../assets/logo.png';
 
 const Header = () => {
     return(
-        <div>
+        <div className="Navigation">
             <Navbar style={{ backgroundColor: "#D70F64", height: "70px"}}>
 
-                <NavbarBrand href="/" className="mr-auto ml-md-5">Brand</NavbarBrand>
+                <NavbarBrand href="/" className="NavbarBrand mr-auto ml-md--5">
+                    <img  src={Logo} alt="logo" width="100%"  height="50px"/>
+                </NavbarBrand>
 
-                <Nav className="mr-md-5">
+                <Nav className="Nav mr-md-5">
                     <NavItem>
-                        <NavLink href="#">Something</NavLink>
+                        <NavLink href="#" className="NavLink">Something</NavLink>
                     </NavItem>
                 </Nav>
             </Navbar>
