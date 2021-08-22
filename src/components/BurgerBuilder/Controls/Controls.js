@@ -15,8 +15,8 @@ const BuildControls = props =>{
             <div className="d-flex justify-content-between px-5">
                 <div className="ml-5 label">{props.label}</div>
                 <div>
-                    <button className="btn btn-danger btn-sm m-1">Less</button>
-                    <button className="btn btn-success btn-sm m-1">More</button>
+                    <button className="btn btn-danger btn-sm m-1" onClick={props.remove}>Less</button>
+                    <button className="btn btn-success btn-sm m-1" onClick={props.added}>More</button>
                 </div>
             </div>
         )
@@ -33,7 +33,9 @@ const Controls = props => {
                             return <BuildControls 
                             label={item.label}
                             type = {item.type}
-                            key = {Math.random()}/>
+                            key = {Math.random()}
+                            added={()=> props.ingredientAdded(item.type)}
+                            remove={()=> props.ingredientRemove(item.type)}/>
                         })
                    }
                 </CardBody>
