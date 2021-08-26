@@ -60,7 +60,7 @@ export const reducer = (state = INITIAL_STATE, action) => {
                 purchasable: sum > 0,
             }
             
-        case actionTypes.REMOVE_INGREDIENT:
+        case actionTypes.RESET_INGREDIENT:
             return{
                 ...state,
 
