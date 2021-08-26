@@ -13,3 +13,16 @@
     /* margin: 0 auto; */
     text-align: start;
 }
+
+.btn-orderNow {
+    background: rgb(215, 15, 100) !important;
+    border: rgb(215, 15, 100) !important;
+}
+
+.btn-check:focus+.btn-secondary,
+.btn-secondary:focus {
+    color: #fff;
+    background: rgb(215, 15, 100) !important;
+    border: 1px solid rgb(215, 15, 100) !important;
+    box-shadow: 0 0 0 0.25rem rgb(215, 15, 100) !important;
+}
